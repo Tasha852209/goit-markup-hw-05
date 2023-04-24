@@ -27,7 +27,7 @@
           >
           <ul class="site-nav list">
             <li class="item">
-              <a class="nav-link link" href="./index.html">Studio</a>
+              <a class="nav-link link studio" href="./index.html">Studio</a>
             </li>
             <li class="item">
               <a class="nav-link link" href="./portfolio.html">Portfolio</a>
@@ -60,7 +60,9 @@
         <div class="hero container">
           <h1 class="title">Effective Solutions for Your Business</h1>
 
-          <button class="title-btn" type="button">Order Service</button>
+          <button class="title-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -437,9 +439,9 @@
       </div>
     </footer>
     <!-- MODAL WINDOW-->
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon">
             <use
               href="./images/icons.svg#modal-close-icon"
