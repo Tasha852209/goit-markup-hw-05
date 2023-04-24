@@ -86,8 +86,7 @@ body {
 }
 .link {
   text-decoration: none;
-  transition: color var(--transition-dur-and-func),
-    background-color var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func);
 }
 .logo-text {
   color: var(--color-dark);
@@ -115,6 +114,10 @@ body {
 }
 .nav-link:hover,
 .nav-link:focus {
+  color: var(--color-pressed-state);
+}
+.nav-link.studio,
+.nav-link.portfolio {
   color: var(--color-pressed-state);
 }
 .nav-link.studio::after,
@@ -357,8 +360,7 @@ body {
   height: 40px;
   border-radius: 50%;
   background-color: var(--color-primary-brand);
-  transition: color var(--transition-dur-and-func),
-    background-color var(--transition-dur-and-func);
+  transition: background-color var(--transition-dur-and-func);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -400,6 +402,7 @@ body {
   width: 168px;
   height: 88px;
   color: var(--color-subtle);
+  transition: color var(--transition-dur-and-func);
 }
 .customers-link:hover,
 .customers-link:focus {
@@ -486,7 +489,8 @@ body {
   padding: 12px 24px;
   transition: color var(--transition-dur-and-func),
     background-color var(--transition-dur-and-func),
-    box-shadow var(--transition-dur-and-func);
+    box-shadow var(--transition-dur-and-func),
+    border var(--transition-dur-and-func);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
